@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My homepage</title>
+    </head>
+    <body>
+        <h1>My messages page</h1>
+        <ul>
+            {% for message in all_messages %}
+            <h3>{{ message.title }}</h3>
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
